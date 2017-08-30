@@ -4,14 +4,14 @@
 
 ### Purpose:
 - Import and convert COSMIC signatures for processing
-- Import and convert Steven's 8-oxoG mutational signature for processing
+- Import and convert 8-oxoG mutational spectrum for processing
 - Match cosine similarities of COSMIC signatures to various spectra
 - Perform unsupervised hierarchical clustering on signatures
 - Create and save heatmap and dendrogram visuals
 - Organize data to look at segments of mutations (e.g. C>A)
 
 ### Authors:
-Essigmann Lab, MIT; Lina Kim
+Essigmann Lab, MIT; Lina Kim, klkim [at] mit dot edu
 
 
 ## cospec.py
@@ -19,7 +19,7 @@ Essigmann Lab, MIT; Lina Kim
 Names of output file names
 
 ### Outputs:
-Only when called by `visualize\_CtA.py`
+Only when called by `visualize_CtA.py`
 
 ### Parameters:
 graphics numbers
@@ -46,7 +46,7 @@ Used on Python 3.6.0.
 - use print functions for cluster array
 - TODO: fix heatmap/dendrogram functionality; only one can plot at once
 
-## visualize\_CtA.py
+## visualize_CtA.py
 ### Inputs:
 - COSMIC mutational signatures in .txt
 - 8-oxoG/TKO mutational spectrum in .txt
