@@ -88,7 +88,7 @@ do
     mkdir $ID/03/$SAM/$BC
     logFile=logs/$ID\_$SAM.log.txt
   done
-  python scripts/match_barcode.py -i $FILE_NAME -r $ID -s $SAM -b $bc_list 1>> $logFile
+  python match_barcode.py -i $FILE_NAME -r $ID -s $SAM -b $bc_list 1>> $logFile
 done
 
 # Step 4: Align to reference genome
@@ -163,4 +163,4 @@ inp_list=${inp_list:0:${#inp_list}-1}
 
 # Step 6: Analyze mutation data from pileup files
 echo 'Analyzing mutation data from pileup files...'
-python scripts/from_pileup.py -i $inp_list -o analysis_01.csv
+python from_pileup.py -i $inp_list -o analysis_01.csv
